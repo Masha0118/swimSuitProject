@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Get from './Get';
 import './Category.css';
@@ -7,7 +7,7 @@ function Category() {
     const [list, setList] = useState([]);
     const [filteredItems, setFilteredItems] = useState([]);
     const [selectedButton, setSelectedButton] = useState(null);
-    const [brand, setBrand] = useState(null);
+    const [setBrand] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
 
     const clientId = "C88k7kKQEPtcbHOYYaRs";
