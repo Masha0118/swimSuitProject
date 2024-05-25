@@ -1,0 +1,13 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 20%;
+}
+
+.carousel-control-prev-icon {
+  margin-right: 100px;
+}
+
+.carousel-control-next-icon {
+  margin-left: 100px;
+}

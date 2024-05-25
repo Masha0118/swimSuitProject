@@ -1,0 +1,27 @@
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title,
+.price {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.cartBox {
+    flex-shrink: 0;
+}
+
+.closeButton {
+    margin-left: 10px;
+}

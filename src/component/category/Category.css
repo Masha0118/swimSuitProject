@@ -1,0 +1,163 @@
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover,
+.button.selected {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+.red-button {
+    background-color: red;
+}
+
+.blue-button {
+    background-color: blue;
+}
+
+.green-button {
+    background-color: green;
+}
+
+.yellow-button {
+    background-color: yellow;
+    color: black;
+}
+
+.orange-button {
+    background-color: orange;
+}
+
+.purple-button {
+    background-color: purple;
+}
+
+.ivory-button {
+    background-color: rgb(195, 195, 184);
+    color: black;
+}
+
+.mint-button {
+    background-color: aqua;
+    color: black;
+}
+
+.pink-button {
+    background-color: pink;
+    color: black;
+}
+
+.white-button {
+    background-color: rgb(246, 239, 239);
+    color: black;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+}
+
+.wave-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    background: url('../../osh_img/wave3.png') repeat-x;
+    background-size: cover;
+    opacity: 0.5;
+    animation: waveAnimation 8s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+.wave.wave2 {
+    top: 10px;
+    opacity: 0.4;
+    animation: waveAnimation2 6s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+.wave.wave3 {
+    top: 20px;
+    opacity: 0.3;
+    animation: waveAnimation3 10s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateX(0) translateY(0) scaleY(1);
+    }
+
+    50% {
+        transform: translateX(-150%) translateY(-10px) scaleY(1.1);
+    }
+
+    100% {
+        transform: translateX(-300%) translateY(0) scaleY(1);
+    }
+}
+
+@keyframes waveAnimation2 {
+    0% {
+        transform: translateX(0) translateY(0) scaleY(1);
+    }
+
+    50% {
+        transform: translateX(-150%) translateY(-15px) scaleY(1.05);
+    }
+
+    100% {
+        transform: translateX(-300%) translateY(0) scaleY(1);
+    }
+}
+
+@keyframes waveAnimation3 {
+    0% {
+        transform: translateX(0) translateY(0) scaleY(1);
+    }
+
+    50% {
+        transform: translateX(-150%) translateY(-20px) scaleY(1.15);
+    }
+
+    100% {
+        transform: translateX(-300%) translateY(0) scaleY(1);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
